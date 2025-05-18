@@ -1,0 +1,25 @@
+
+<html>
+<head>
+    <title>Student List</title>
+</head>
+<body>
+    <h2>Student List</h2>
+    <table border="1">
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Percentage</th>
+            <th>Branch</th>
+        </tr>
+        <c:forEach var="student" items="${students}">
+            <tr>
+                <td>${student.rollNo}</td>
+                <td>${student.name}</td>
+                <td>${student.percentage}</td>
+                <td>${student.branch}</td>
+            </tr>
+        </c:forEach>
+    </table>
+</body>
+</html>
